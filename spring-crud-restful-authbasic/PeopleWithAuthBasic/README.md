@@ -21,6 +21,13 @@ It's interesting that you take the cookies into account when testing the Basic A
 
 ![alt text](https://github.com/tcrurav/SpringCrudBasicAuthRestJPAMySQL/blob/master/cookies.gif)
 
+
+### A Basic, basic, basic version with hard coded users
+
+For such a version of this project use git to checkout the second commit called: 
+
+==> Auth Basic: a bit more complex, https://github.com/tcrurav/SpringCrudBasicAuthRestJPAMySQL/tree/c5ac1f247d51679254c8297a0e459d67287878b7
+
 ### Prerequisites
 
 All you need is... some time and...
@@ -39,5 +46,8 @@ All you need is... some time and...
 
 ## Acknowledgments
 
+* https://spring.io/understanding/CORS. Good link to understand CORS.
 * https://www.getpostman.com/. Used to test the RESTFul end points of the project.
 * https://giphy.com/. Used to create the animated gif.
+* https://gist.github.com/PurpleBooth/109311bb0361f32d87a2. A very complete template for README.md files.
+* https://www.dailycred.com/article/bcrypt-calculator. A helpfull bcrypt calculator.
