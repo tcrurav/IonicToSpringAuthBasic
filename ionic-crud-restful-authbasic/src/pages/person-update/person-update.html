@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Person Update</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form #personForm="ngForm" (ngSubmit)="save(personForm.value)">
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <ion-item>
+            <ion-input placeholder="Person" name="name" type="text" required [(ngModel)]="person.name" #name></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input placeholder="Age" name="age" type="number" required [(ngModel)]="person.age" #age></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+        <button ion-button color="primary" full type="submit" [disabled]="!personForm.form.valid">Save</button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

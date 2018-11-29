@@ -1,0 +1,7 @@
+{
+  "name": "ionic-crud-restful-authbasic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

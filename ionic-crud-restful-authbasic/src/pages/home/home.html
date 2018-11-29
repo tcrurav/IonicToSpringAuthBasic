@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+
+    <ion-title>
+      Person List
+    </ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="createPerson()">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item-sliding *ngFor="let p of persons">
+      <ion-item text-wrap>
+        <h2>{{p.name}}</h2>
+        <p>age: {{p.age}}</p>
+      </ion-item>
+      <ion-item-options>
+        <button ion-button color="primary" (click)="updatePerson(p)">
+          <ion-icon name="create"></ion-icon> Update
+        </button>
+        <button ion-button color="danger" (click)="deletePersonById(p.id)">
+          <ion-icon name="trash"></ion-icon> Delete
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
