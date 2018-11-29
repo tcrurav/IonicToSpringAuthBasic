@@ -1,5 +1,5 @@
 # Ionic CRUD accessing a RESTful Service
-# using Auth Basic (hard coded in rest.ts the user juan with password juan)
+### using Auth Basic (hard coded in rest.ts the user juan with password juan)
 
 It's just that...
 
